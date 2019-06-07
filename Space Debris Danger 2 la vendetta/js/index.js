@@ -47,9 +47,10 @@ function init() {
 }
 
 var scene,
-  camera, fieldOfView, aspectRatio, nearPlane, farPlane, HEIGHT, WIDTH,
-  renderer, container,
+  camera, camera2, camera3, fieldOfView, aspectRatio, nearPlane, farPlane, HEIGHT, WIDTH,
+  renderer, renderer2, renderer3, container,
   hemisphereLight, shadowLight;
+
 
 function createScene() {
   // Get the width and the height of the screen,
@@ -63,13 +64,15 @@ function createScene() {
 
   // Add a fog effect to the scene; same color as the
   // background color used in the style sheet
-  scene.fog = new THREE.Fog(0x404078, 400, 950);
+  scene.fog = new THREE.Fog(0x404078, 350, 750);
 
   // Create the camera
   aspectRatio = WIDTH / HEIGHT;
   fieldOfView = 60;
   nearPlane = 1;
   farPlane = 950;
+
+
   camera = new THREE.PerspectiveCamera(
     fieldOfView,
     aspectRatio,
@@ -81,6 +84,34 @@ function createScene() {
   camera.position.z = 200;
   camera.position.y = 1700;
   camera.position.x = -400;
+
+
+// CAMERA 2
+  camera2 = new THREE.PerspectiveCamera(
+    1.1*fieldOfView,
+    (WIDTH) / (HEIGHT),
+    nearPlane,
+    farPlane-600
+  );
+
+  // Set the position of the camera
+  camera2.position.z = -210;
+  camera2.position.y = 2050;
+  camera2.position.x = -50;
+  camera2.lookAt(new THREE.Vector3(-50,0,0));
+
+
+  camera3 = new THREE.PerspectiveCamera(
+    fieldOfView,
+    aspectRatio,
+    nearPlane,
+    farPlane
+  );
+
+  // Set the position of the camera
+  camera3.position.z = 200;
+  camera3.position.y = -2960;
+  camera3.position.x = -400;
 
   // Create the renderer
   renderer = new THREE.WebGLRenderer({
@@ -105,10 +136,57 @@ function createScene() {
   container = document.getElementById('world');
   container.appendChild(renderer.domElement);
 
+
+// RENDERER NUMERO 2 PER GRAFICO 2
+renderer2 = new THREE.WebGLRenderer({
+
+  alpha: true,
+  antialias: true
+});
+
+  renderer2.setSize(WIDTH, HEIGHT);
+  renderer2.shadowMap.enabled = true;
+
+  container2 = document.getElementById('debrisLine');
+  container2.appendChild(renderer2.domElement);
+
+
+  renderer3 = new THREE.WebGLRenderer({
+
+    alpha: true,
+    antialias: true
+  });
+
+    renderer3.setSize(WIDTH, HEIGHT);
+    renderer3.shadowMap.enabled = true;
+
+    container3 = document.getElementById('dlrow');
+    container3.appendChild(renderer3.domElement);
+
+
+
+
+
+
   // Listen to the screen: if the user resizes it
   // we have to update the camera and the renderer size
   window.addEventListener('resize', handleWindowResize, false);
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
 var mousePos = {
   x: 0,
   y: 0
@@ -135,7 +213,7 @@ function handleMouseMove(event) {
 }
 
 function handleWindowResize() {
-  // update height and width of the renderer and the camera
+  // update height and width of the renderer and the camera+
   HEIGHT = window.innerHeight;
   WIDTH = window.innerWidth;
   renderer.setSize(WIDTH, HEIGHT);
@@ -210,14 +288,14 @@ Cloud = function() {
 
 
 
-  if (flag < 0.96) {
-    var geom = new THREE.TetrahedronBufferGeometry(4 + Math.random() * 3);
-  } else if (flag > 0.96 && flag < 0.997) {
+  if (flag < 0.992) {
+    var geom = new THREE.TetrahedronBufferGeometry(2 + Math.random() * 2);
+  } else if (flag >= 0.992 && flag < 0.999) {
     //  var geom = createGem();
-  //  var geom = new THREE.OctahedronBufferGeometry(6 + Math.random() * 6);
-  } else if (flag > 0.997) {
+    var geom = new THREE.OctahedronBufferGeometry(8 + Math.random() * 6);
+  } else if (flag >= 0.999) {
     //  var geom = createGem();
-    //var geom = new THREE.DodecahedronBufferGeometry(10 + Math.random() * 10);
+    var geom = new THREE.DodecahedronBufferGeometry(25 + Math.random() * 10);
   }
 
   // create a material; a simple white material will do the trick
@@ -302,7 +380,7 @@ Sky = function() {
 
     // for a better result, we position the clouds
     // at random depths inside of the scene
-    c.mesh.position.z = 20 - Math.random() * 1000;
+    c.mesh.position.z = 20 - Math.random() * 600;
 
     // we also set a random scale for each cloud
     /*  if (Math.random()>(0.7)){
@@ -342,6 +420,8 @@ function loop() {
 
   // render the scene
   renderer.render(scene, camera);
+  renderer2.render(scene, camera2);
+  renderer3.render(scene, camera3);
 
   // call the loop function again
   requestAnimationFrame(loop);

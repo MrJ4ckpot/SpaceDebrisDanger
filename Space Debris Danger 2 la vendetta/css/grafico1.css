@@ -60,6 +60,7 @@ display: inline;
     font-family: "GT America Compressed";
     font-size: 3rem;
     font-weight: 200;
+    user-select: none;
   }
 
 

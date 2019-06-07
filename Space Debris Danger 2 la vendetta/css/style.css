@@ -53,7 +53,10 @@
 
 
 
-#parallax{}
+#parallax{ position: relative;
+	bottom: -40px;
+	top: 0px;
+}
 
 
 #world {
@@ -64,6 +67,32 @@
 	background: linear-gradient(#2c003f, #00234c);
 
 	position: fixed;
+	margin-top: 0px;
+
+}
+
+
+#dlrow {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+  z-index:-1000;
+	background: linear-gradient( #00234c, #2c003f);
+		position: fixed;
+		bottom: -580px;
+
+}
+
+
+#debrisLine {
+	margin-top: 80px;
+	margin-bottom: 0px;
+	width: 100%;
+	overflow: hidden;
+	transform: scale(-1, 1);
+	background: linear-gradient(rgba(139, 158, 188, 0), rgba(139, 158, 188, .0), rgba(139, 158, 188, 0));
+	z-index: -200;
+	align-items: center;
 
 }
 
@@ -100,9 +129,10 @@ color: white;
 font-size: 20rem;
 letter-spacing: 0;
 }
-h3{
-	font-size: 5rem;
 
+h3{
+	font-size: 4rem;
+  text-transform: uppercase;
 }
 #header h2{
 	font-family: "GT America Extended Ultra";
@@ -170,14 +200,14 @@ h3{
 .corpo{
 	font-family: "IBM Plex Mono";
   color: #9ccbd8;
-  font-size: 16px;
+  font-size: 1.6rem;
 	font-style: normal;
   margin-top: 20px;
+	line-height: 180%;
+	list-style-type: none;
 }
 
-.muro{
-		margin-top: 180px;
-}
+
 
 #continua {
 	font-family: "Space Mono";
@@ -191,14 +221,15 @@ h3{
 	letter-spacing: 1.5rem;
 }
 
-strong{
-	color:#cce2e8;
-		font-style: 300;
+span{
+	color:#edf9fc;
 }
 
 #pianeta{
 
 	margin-top: 200px;
+	position: relative;
+	bottom: -12px;
 /*
 background: rgba(49,39,130,1);
 background: -moz-linear-gradient(left, rgba(49,39,130,1) 0%, rgba(0,35,76,1) 100%);
@@ -212,10 +243,59 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
 #pianeta .terra{
 width: 100%;
 z-index: -500;
+
+
 }
 
 .backTerra{
-	padding-top: 100px;
-	background: #1C4584;
+	margin-top: -100px;
+	margin-bottom: -100px;
+	top: -10px;
+	background: linear-gradient(#1C4584,#125654);
 	width: 100%;
+	z-index: -450;
+}
+
+.testo3{
+	margin-top: 140px;
+}
+
+#pianeta2{
+
+	margin-top: 0px;
+
+/*
+background: rgba(49,39,130,1);
+background: -moz-linear-gradient(left, rgba(49,39,130,1) 0%, rgba(0,35,76,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(49,39,130,1)), color-stop(100%, rgba(0,35,76,1)));
+background: -webkit-linear-gradient(left, rgba(49,39,130,1) 0%, rgba(0,35,76,1) 100%);
+background: -o-linear-gradient(left, rgba(49,39,130,1) 0%, rgba(0,35,76,1) 100%);
+background: -ms-linear-gradient(left, rgba(49,39,130,1) 0%, rgba(0,35,76,1) 100%);
+background: linear-gradient(to right, rgba(49,39,130,1) 0%, rgba(0,35,76,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', endColorstr='#00234c', GradientType=1 );*/
+}
+
+
+.corpoFonti{
+	font-family: "IBM Plex Mono";
+  color: #9ccbd8;
+  font-size: 1.1rem;
+	font-style: normal;
+  margin-top: 20px;
+	line-height: 180%;
+	list-style-type: none;
+}
+
+
+
+.footer h3{
+	font-size: .8rem;
+}
+
+.viola{
+	/*margin top:400px; */
+	padding-top: 0px;
+	padding-bottom: 00px;
+	background-color: rgba(37, 0, 55, .7);
+
 }
