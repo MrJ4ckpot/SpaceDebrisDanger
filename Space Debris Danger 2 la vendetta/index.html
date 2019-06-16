@@ -72,7 +72,7 @@
   </div>
 
 
-  <div class="container muro">
+  <div class="container muro discarica">
     <div class="row">
       <div class="columns two">&nbsp;</div>
 
@@ -1760,7 +1760,7 @@
     </div>
 
 
-    <div class="testo3 container">
+    <div class="testo3 container invisibile">
       <div class="row">
         <div class=" columns two"> <br> </div>
         <div class="columns eight">
@@ -2227,10 +2227,8 @@
       <div class=" columns two"> <br> </div>
       <div class="columns eight">
 
-
-        <h3> Fonti </h3>
-
         <ul class="corpoFonti">
+          <h3> Fonti </h3>
           <li><strong>Space debris - The story so far</strong>, Nicolas Bobrinsky, European space agency</li>
           <li><strong>La sindrome di Kessler e il problema dei detriti spaziali</strong>, Prof.Alberto Buzzoni, Osservatorio astronomico di Bologna</li>
           <li><strong>Collisional Cascading: The Limits of Population Growth in Low Earth Orbit</strong>, Donald J. Kessler, NASA</li>
@@ -2261,7 +2259,7 @@
     });
     var controller = new ScrollMagic.Controller();
     // build tween
-    var tweencontinua = TweenMax.to("#continua", 300, {
+    var tweencontinua = TweenMax.to("#continua", 4, {
       css: {
         opacity: "0"
       }
@@ -2271,7 +2269,7 @@
     // build tween
     var tweencontinua = TweenMax.to("#dlrow", 5000, {
       css: {
-        bottom: "100px"
+        bottom: "0vh"
       }
     });
 
@@ -2282,14 +2280,14 @@
       duration: 36000
     }).setTween(tween).addTo(controller);
     var scene = new ScrollMagic.Scene({
-      triggerElement: ".muro",
-      triggerHook: "onEnter",
-      duration: 150
+      triggerElement: ".discarica",
+      triggerHook: "onLeave",
+      duration: 50
     }).setTween(tweencontinua).addTo(controller);
     var scene = new ScrollMagic.Scene({
-      triggerElement: ".irreversibile",
-      triggerHook: "onEnter",
-      duration: 2000
+      triggerElement: ".invisibile",
+      triggerHook: "onLeave",
+      duration: 2900
     }).setTween(tweencontinua).addTo(controller);
     /////////////////////////////////////////////
   </script>

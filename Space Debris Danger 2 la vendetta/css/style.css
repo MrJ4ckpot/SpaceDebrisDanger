@@ -79,7 +79,7 @@
   z-index:-1000;
 	background: linear-gradient( #00234c, #2c003f);
 		position: fixed;
-		bottom: -580px;
+		bottom: -100vh;
 
 }
 
@@ -281,7 +281,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
   color: #9ccbd8;
   font-size: 1.1rem;
 	font-style: normal;
-  margin-top: 20px;
+  margin-top: 40px;
+	margin-bottom: 40px;
 	line-height: 180%;
 	list-style-type: none;
 }
@@ -297,5 +298,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
 	padding-top: 0px;
 	padding-bottom: 00px;
 	background-color: rgba(37, 0, 55, .7);
+}
 
+.corpoFonti h3{
+	font-family: "GT America Compressed Ultra";
+	font-size: 4rem;
 }

@@ -1,4 +1,4 @@
-let scene, camera, container, renderer
+/*let scene, camera, container, renderer
 let objectLoader = new THREE.ObjectLoader()
 let gem
 
@@ -60,3 +60,4 @@ function animate() {
   }
 }
 animate()
+*/
