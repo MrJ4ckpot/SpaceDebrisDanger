@@ -304,26 +304,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
 
 .headT{
 	font-family: "GT America Compressed Ultra";
-  color: white;
-  font-size: 4.5rem;
+	text-decoration: underline;
+  fill: white;
+  font-size: 3.8rem;
   letter-spacing: 0;
-	position: absolute;
-	bottom: 50vh;
-	left: 70vw;
 	text-align: right;
 	text-transform: uppercase;
+	margin-right: 7.5vw;
 }
 
 .bodyT{
 	font-family: "IBM Plex Mono";
-	color: #9ccbd8;
-	font-size: 1.5rem;
+	fill: #9ccbd8;
+	font-size: 1rem;
 	font-style: normal;
-	position: absolute;
-	bottom: 40vh;
-	left: 70vw;
-	right: 7.5vw;
 	text-align: right;
+	margin-right: 7.5vw;
 }
 
 .headT2{
@@ -331,9 +327,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
   color: white;
   font-size: 4.5rem;
   letter-spacing: 0;
-	position: absolute;
-	bottom: -500vh;
-	right: 7.5vw;
 	text-align: right;
 	text-transform: uppercase;
 	z-index: 100000;
@@ -357,3 +350,52 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
 .proiettili{
 	margin-top: 20vh;
 }
+
+
+/* Larger than mobile */
+@media (max-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+	.bloccoVerticale{
+		display: inherit;
+	}
+}
+
+/* Larger than tablet */
+@media (max-width: 750px) {
+	.carica{
+		font-size: 6vw;
+	}
+
+	#header h1{
+	font-size: 15rem;
+	}
+
+	#header h2{
+	font-size: 1.3rem;
+	letter-spacing: .5rem;
+	}
+
+	.headT{
+		font-size: 7rem;
+  	!transform: translateX(-10vw);}
+
+	.headT2{
+		font-size: 7rem;
+	  !transform: translateX(-10vw);}
+
+	.bodyT{
+		font-size: 1.8rem;
+  	!transform: translateX(-10vw);}
+
+	.bodyT2{
+		font-size: 1.8rem;
+	  !transform: translateX(-10vw);}
+}
+
+/* Larger than desktop */
+@media (max-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (max-width: 1200px) {}
