@@ -1,3 +1,14 @@
+#bloccoVerticale{
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: fixed;
+		background: linear-gradient(#2c003f, #00234c);
+			align-items: center;
+			z-index: 123455555555;
+}
+
+
 #caricamento {
 
 	width: 100%;
@@ -352,12 +363,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
 }
 
 
-/* Larger than mobile */
-@media (max-width: 400px) {}
 
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {
-	.bloccoVerticale{
+/* Larger than mobile (also point when grid becomes active) */
+@media (max-width: 425px) {
+	#bloccoVerticale{
 		display: inherit;
 	}
 }
@@ -369,33 +378,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
 	}
 
 	#header h1{
-	font-size: 15rem;
+	font-size: 10rem;
+	position: relative;
+	top: 4rem;
 	}
 
 	#header h2{
-	font-size: 1.3rem;
-	letter-spacing: .5rem;
+	font-size: 1rem;
+	letter-spacing: .4rem;
+	position: relative;
+	top: -10rem;
+	margin-top: 0px;
 	}
 
-	.headT{
-		font-size: 7rem;
-  	!transform: translateX(-10vw);}
-
-	.headT2{
-		font-size: 7rem;
-	  !transform: translateX(-10vw);}
-
-	.bodyT{
-		font-size: 1.8rem;
-  	!transform: translateX(-10vw);}
-
-	.bodyT2{
-		font-size: 1.8rem;
-	  !transform: translateX(-10vw);}
 }
 
 /* Larger than desktop */
-@media (max-width: 1000px) {}
+@media (max-width: 1000px) {
+	.headT{
+		display: none;}
+
+	.headT2{
+		display: none;}
+
+	.bodyT{
+		display: none;}
+
+	.bodyT2{
+		display: none;}
+}
 
 /* Larger than Desktop HD */
 @media (max-width: 1200px) {}
