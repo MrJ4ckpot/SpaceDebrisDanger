@@ -2243,11 +2243,12 @@
       <div class="columns eight">
 
         <ul class="corpoFonti">
+          <hr>
           <h3> Fonti </h3>
-          <li><strong>Space debris - The story so far</strong>, Nicolas Bobrinsky, European space agency</li>
-          <li><strong>La sindrome di Kessler e il problema dei detriti spaziali</strong>, Prof.Alberto Buzzoni, Osservatorio astronomico di Bologna</li>
-          <li><strong>Collisional Cascading: The Limits of Population Growth in Low Earth Orbit</strong>, Donald J. Kessler, NASA</li>
-          <li><strong>The Kessler Syndrome: Implications to Future Space operations</strong>, Donald J. Kessler, Nicholas L. Johnson, J.-C. Liou, and Mark Matney, NASA e American astronautical society</li>
+          <li><strong>"Space debris - The story so far"</strong>, Nicolas Bobrinsky, European space agency</li>
+          <li><strong>"La sindrome di Kessler e il problema dei detriti spaziali"</strong>, Prof.Alberto Buzzoni, Osservatorio astronomico di Bologna</li>
+          <li><strong>"Collisional Cascading: The Limits of Population Growth in Low Earth Orbit"</strong>, Donald J. Kessler, NASA</li>
+          <li><strong>"The Kessler Syndrome: Implications to Future Space operations"</strong>, Donald J. Kessler, Nicholas L. Johnson, J.-C. Liou, and Mark Matney, NASA e American astronautical society</li>
         </ul>
 
       </div>
@@ -2317,7 +2318,7 @@
     });
     var controller = new ScrollMagic.Controller();
     // build tween
-    var tweencontinua = TweenMax.to("#continua", 150, {
+    var tweencontinua = TweenMax.to("#continua", 10, {
       css: {
         opacity: "0"
       }
@@ -2340,7 +2341,7 @@
     var scene = new ScrollMagic.Scene({
       triggerElement: "#header h2",
       triggerHook: "onLeave",
-      duration: 100
+      duration: 30
     }).setTween(tweencontinua).addTo(controller);
     var scene = new ScrollMagic.Scene({
       triggerElement: ".invisibile",
