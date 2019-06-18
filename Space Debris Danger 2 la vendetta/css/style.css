@@ -363,6 +363,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
 }
 
 
+.rotate{
+  width: 90px;
+  -webkit-animation: oriz 1.5s alternate infinite;
+  animation: oriz 1.5s alternate infinite;
+
+  margin-top: 50vh;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@-webkit-keyframes oriz {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(180deg); }
+}
+
+@keyframes oriz {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(180deg); }
+}
+
+
+
+
+
+
+
+
 
 /* Larger than mobile (also point when grid becomes active) */
 @media (max-width: 425px) {
