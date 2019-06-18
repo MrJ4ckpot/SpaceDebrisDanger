@@ -335,10 +335,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
   font-size: 4.5rem;
   letter-spacing: 0;
 	position: absolute;
-	bottom: -50vh;
+	top: 150vh;
 	left: 70vw;
 	text-align: right;
 	text-transform: uppercase;
+	z-index: 100000;
 }
 
 .bodyT2{
@@ -346,12 +347,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
 	color: #9ccbd8;
 	font-size: 1.6rem;
 	font-style: normal;
-	position: absolute;
-	bottom: -45vh;
-	left: 50vw;
+	position: relative;
+	margin-bottom: -45vh;
+	margin-left: 50vw;
 	right: 7.5vw;
 	text-align: right;
+	z-index: 100000;
 }
+
 
 .proiettili{
 	margin-top: 20vh;
