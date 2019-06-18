@@ -4,6 +4,10 @@ var numeroDebris = 8000;
 let objectLoader = new THREE.ObjectLoader();
 let gem;
 
+
+
+
+
 function createGem() {
   objectLoader.load(
   //'https://s3-us-west-2.amazonaws.com/s.cdpn.io/126747/gem1.json',
@@ -426,16 +430,3 @@ function loop() {
   // call the loop function again
   requestAnimationFrame(loop);
 }
-
-
-
-
-
-
-/*$(function () {
-
-
-  $("#caricamento").hide();
-
-
-});*/

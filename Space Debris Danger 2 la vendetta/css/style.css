@@ -335,6 +335,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
 
 .headT2{
 	font-family: "GT America Compressed Ultra";
+	text-decoration: underline;
   color: white;
   font-size: 4.5rem;
   letter-spacing: 0;

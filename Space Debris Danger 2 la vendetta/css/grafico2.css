@@ -60,6 +60,17 @@ width:49%;
 left:26.5%;
 }
 
+#debrisText h6{
+  font-family: "GT America Compressed Ultra";
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 5.5rem;
+  border-bottom: 2px solid;
+  display: inline-block;
+  line-height: .9;
+}
+
+
 #debrisText h4{
   font-family: "IBM Plex Mono";
   font-weight: 400;
