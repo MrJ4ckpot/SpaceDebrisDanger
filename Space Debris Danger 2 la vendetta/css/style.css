@@ -335,8 +335,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
   font-size: 4.5rem;
   letter-spacing: 0;
 	position: absolute;
-	top: 150vh;
-	left: 70vw;
+	bottom: -500vh;
+	right: 7.5vw;
 	text-align: right;
 	text-transform: uppercase;
 	z-index: 100000;
@@ -348,9 +348,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
 	font-size: 1.6rem;
 	font-style: normal;
 	position: relative;
-	margin-bottom: -45vh;
-	margin-left: 50vw;
+	position: absolute;
+	bottom: -508vh;
 	right: 7.5vw;
+	left: 50vw;
 	text-align: right;
 	z-index: 100000;
 }
