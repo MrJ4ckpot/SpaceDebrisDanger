@@ -304,3 +304,55 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
 	font-family: "GT America Compressed Ultra";
 	font-size: 4rem;
 }
+
+.headT{
+	font-family: "GT America Compressed Ultra";
+  color: white;
+  font-size: 4.5rem;
+  letter-spacing: 0;
+	position: absolute;
+	bottom: 50vh;
+	left: 70vw;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.bodyT{
+	font-family: "IBM Plex Mono";
+	color: #9ccbd8;
+	font-size: 1.6rem;
+	font-style: normal;
+	position: absolute;
+	bottom: 45vh;
+	left: 50vw;
+	right: 7.5vw;
+	text-align: right;
+}
+
+.headT2{
+	font-family: "GT America Compressed Ultra";
+  color: white;
+  font-size: 4.5rem;
+  letter-spacing: 0;
+	position: absolute;
+	bottom: -50vh;
+	left: 70vw;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.bodyT2{
+	font-family: "IBM Plex Mono";
+	color: #9ccbd8;
+	font-size: 1.6rem;
+	font-style: normal;
+	position: absolute;
+	bottom: -45vh;
+	left: 50vw;
+	right: 7.5vw;
+	text-align: right;
+}
+
+.proiettili{
+	margin-top: 20vh;
+}

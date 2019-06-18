@@ -1663,6 +1663,14 @@
       </g>
     </svg>
 
+    <g id="titoloGrafico1">
+      <text class="headT">Che cosa mandiamo in orbita?</text>
+      <text class="bodyT">
+        Quantità percentuali dei satelliti attivi in orbita, classificati in base al tipo di lavoro che svolgono,
+        agli enti che li sfruttano e alla loro nazionalità.
+      </text>
+    </g>
+
   </div>
 
 
@@ -1678,7 +1686,7 @@
       <div class="row">
         <div class="columns two">&nbsp;</div>
         <div class="columns eight">
-          <h3> Proiettili in orbita </h3>
+          <h3 class=" proiettili"> Proiettili in orbita </h3>
           <p class="corpo"> L'enorme <span>concentrazione di space debris</span> nelle zone di maggior
             densità di oggetti attivi rappresenta un enorme <span>pericolo</span>
             per la salute delle comunicazioni, i segnali televisivi
@@ -1713,7 +1721,7 @@
 
         <div class="row">
           <div class="box columns four">
-            <div id="oggetto1"><img src="img/source.gif" alt="debris1" width="20%"></div>
+            <div id="oggetto1"><img src="img/veloce.gif" alt="debris1" width="20%"></div>
             <hr>
             <h5> 0.01cm 1cm </h5>
             <h4>99.2 %</h4>
@@ -1726,7 +1734,7 @@
           </div>
 
           <div class="box columns four">
-            <div id="oggetto2"><img src="img/source.gif" alt="debris2" width="40%"></div>
+            <div id="oggetto2"><img src="img/medio.gif" alt="debris2" width="40%"></div>
             <hr>
             <h5> 1cm 10cm </h5>
             <h4>00.7 %</h4>
@@ -1739,7 +1747,7 @@
           </div>
 
           <div class="box columns four">
-            <div id="oggetto3"><img src="img/source.gif" alt="debris3" width="80%"></div>
+            <div id="oggetto3"><img src="img/lento.gif" alt="debris3" width="80%"></div>
             <hr>
             <h5> 10cm 250cm </h5>
             <h4>00.1 %</h4>
@@ -1802,6 +1810,34 @@
       <g id="Livello_9" display="none">
         <rect x="0" y="152.2" display="inline" fill="#0E113C" width="1341.7" height="791" />
       </g>
+
+      <g id="TERRA2">
+        <g>
+          <defs>
+            <rect id="pippo" y="0" width="1342.4" height="1046.5" />
+          </defs>
+          <clipPath id="paperino">
+            <use xlink:href="#pippo" />
+          </clipPath>
+
+          <radialGradient id="pluto" cx="1017.702" cy="2187.4932" r="1784.5826" gradientTransform="matrix(1 0 0 -1 0 993.6869)" gradientUnits="userSpaceOnUse">
+            <stop offset="0.9247" style="stop-color:#5578AA" />
+            <stop offset="0.9839" style="stop-color:#5578AA;stop-opacity:0" />
+          </radialGradient>
+          <path clip-path="url(#paperino)" fill="url(#pluto)" d="M2802.3-1193.8c0-985.6-799-1784.6-1784.6-1784.6
+  			s-1784.6,799-1784.6,1784.6S32.1,590.8,1017.7,590.8S2802.3-208.2,2802.3-1193.8z M2692.7-1193.8c0,925.1-749.9,1675-1675,1675
+  		 	s-1675-749.9-1675-1675s749.9-1675,1675-1675S2692.7-2118.9,2692.7-1193.8z" />
+
+          <radialGradient id="orazio" cx="632.9609" cy="543.9757" r="977.8114" gradientTransform="matrix(-0.9748 -0.2229 0.1094 -0.4786 1190.4636 945.4271)" gradientUnits="userSpaceOnUse">
+            <stop offset="7.526882e-002" style="stop-color:#002524" />
+            <stop offset="0.4833" style="stop-color:#003C3A" />
+            <stop offset="1" style="stop-color:#125655" />
+          </radialGradient>
+          <circle clip-path="url(#paperino)" fill="url(#orazio)" cx="1017.7" cy="-1193.8" r="1720.9" />
+        </g>
+      </g>
+
+
       <g id="ALTEZZE">
         <path fill="none" stroke="#1573BB" stroke-width="0.5669" stroke-miterlimit="10" d="M0,531.6C298.2,707.9,646.2,809,1017.7,809
   		c110.5,0,219-9,324.6-26.2" />
@@ -2149,35 +2185,14 @@
         </g>
       </g>
 
-
-      <g id="TERRA2">
-        <g>
-          <defs>
-            <rect id="pippo" y="0" width="1342.4" height="1046.5" />
-          </defs>
-          <clipPath id="paperino">
-            <use xlink:href="#pippo" />
-          </clipPath>
-
-          <radialGradient id="pluto" cx="1017.702" cy="2187.4932" r="1784.5826" gradientTransform="matrix(1 0 0 -1 0 993.6869)" gradientUnits="userSpaceOnUse">
-            <stop offset="0.9247" style="stop-color:#5578AA" />
-            <stop offset="0.9839" style="stop-color:#5578AA;stop-opacity:0" />
-          </radialGradient>
-          <path clip-path="url(#paperino)" fill="url(#pluto)" d="M2802.3-1193.8c0-985.6-799-1784.6-1784.6-1784.6
-  			s-1784.6,799-1784.6,1784.6S32.1,590.8,1017.7,590.8S2802.3-208.2,2802.3-1193.8z M2692.7-1193.8c0,925.1-749.9,1675-1675,1675
-  		 	s-1675-749.9-1675-1675s749.9-1675,1675-1675S2692.7-2118.9,2692.7-1193.8z" />
-
-          <radialGradient id="orazio" cx="632.9609" cy="543.9757" r="977.8114" gradientTransform="matrix(-0.9748 -0.2229 0.1094 -0.4786 1190.4636 945.4271)" gradientUnits="userSpaceOnUse">
-            <stop offset="7.526882e-002" style="stop-color:#002524" />
-            <stop offset="0.4833" style="stop-color:#003C3A" />
-            <stop offset="1" style="stop-color:#125655" />
-          </radialGradient>
-          <circle clip-path="url(#paperino)" fill="url(#orazio)" cx="1017.7" cy="-1193.8" r="1720.9" />
-        </g>
+      <g id="titoloGrafico2">
+        <text class="headT2">La causa del debris è il debris</text>
+        <text class="bodyT2">
+          Timeline degli incidenti in orbita bassa in cui sono stati coinvolti i satelliti, classificati
+          per la quantità di debris prodotto. Gli eventi sono divisi
+          per impatti con il debris, scontri tra satelliti e abbattimenti intenzionali.
+        </text>
       </g>
-
-
-
     </svg>
 
 
@@ -2302,7 +2317,7 @@
     });
     var controller = new ScrollMagic.Controller();
     // build tween
-    var tweencontinua = TweenMax.to("#continua", 4, {
+    var tweencontinua = TweenMax.to("#continua", 150, {
       css: {
         opacity: "0"
       }
@@ -2323,9 +2338,9 @@
       duration: 36000
     }).setTween(tween).addTo(controller);
     var scene = new ScrollMagic.Scene({
-      triggerElement: ".discarica",
+      triggerElement: "#header h2",
       triggerHook: "onLeave",
-      duration: 50
+      duration: 100
     }).setTween(tweencontinua).addTo(controller);
     var scene = new ScrollMagic.Scene({
       triggerElement: ".invisibile",
