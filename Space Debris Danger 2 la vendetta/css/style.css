@@ -238,7 +238,7 @@ span{
 
 #pianeta{
 
-	margin-top: 200px;
+	margin-top: 0px;
 	position: relative;
 	bottom: -12px;
 /*
@@ -309,6 +309,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
 	font-size: 4rem;
 }
 
+a{
+	color: #9ccbd8;
+}
+
+a:hover{
+	color: white;
+}
+
+.corpo a {
+	text-decoration: none;
+}
+
 .viola{
 	margin-bottom: 40px;
 }
@@ -362,6 +374,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312782', end
 .proiettili{
 	margin-top: 20vh;
 }
+
+.mandiamo {
+	margin-top: 160px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .rotate{
