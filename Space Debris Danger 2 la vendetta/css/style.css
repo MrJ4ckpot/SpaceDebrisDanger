@@ -99,7 +99,7 @@
 	margin-top: 80px;
 	margin-bottom: 0px;
 	width: 100%;
-	overflow: scroll;
+	overflow: hidden;
 	transform: scale(-1, 1);
 	background: linear-gradient(rgba(139, 158, 188, 0), rgba(139, 158, 188, .0), rgba(139, 158, 188, 0));
 	z-index: -200;
@@ -497,7 +497,9 @@ a:hover{
 		font-size: 1rem;
 		spacing: .4rem;
 	}
-
+#debrisLine{
+	overflow: scroll;
+}
 
 }
 
