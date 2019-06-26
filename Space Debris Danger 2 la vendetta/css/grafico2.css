@@ -23,9 +23,9 @@
   width:100%;
   position: relative;
 
-  margin-top: 12vh;
+  margin-top: 14vh;
   margin-bottom: -10vh;
-  opacity: .7;
+  opacity: .9;
   text-align: center;
 }
 
@@ -34,9 +34,9 @@
   width:100%;
   position: relative;
 
-  margin-top: 8vh;
+  margin-top: 10vh;
   margin-bottom: -6vh;
-  opacity: .7;
+  opacity: .9;
   text-align: center;
 }
 
@@ -46,9 +46,9 @@
   width:100%;
   position: relative;
 
-  margin-top: 2vh;
+  margin-top: 4vh;
   margin-bottom: -0vh;
-    opacity: .7;
+    opacity: .9;
     text-align: center;
 }
 
@@ -60,7 +60,7 @@ position: absolute;
 top: -60px;
 
 width:49%;
-left:26.5%;
+margin-left:26.5%;
 }
 
 #debrisText h6{
