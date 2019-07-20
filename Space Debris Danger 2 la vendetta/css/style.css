@@ -435,7 +435,7 @@ a:hover{
 }
 
 /* Larger than tablet */
-@media (max-width: 750px) {
+@media (max-width: 800px) {
 	.carica{
 		font-size: 6vw;
 	}
